@@ -1,0 +1,44 @@
+{
+    "name": "tmdroid/openapiro",
+    "description": "An API wrapper for https://openapi.ro/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Bejan",
+            "email": "bejanpauldaniel@gmail.com",
+            "homepage": "https://adlabs.ro"
+        }
+    ],
+    "homepage": "https://github.com/tmdroid/openapiro",
+    "keywords": ["Laravel", "OpenApiRo"],
+    "require": {
+        "illuminate/support": "~5",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "tmdroid\\OpenApiRo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tmdroid\\OpenApiRo\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "tmdroid\\OpenApiRo\\OpenApiRoServiceProvider"
+            ],
+            "aliases": {
+                "OpenApiRo": "tmdroid\\OpenApiRo\\Facades\\OpenApiRo"
+            }
+        }
+    }
+}
