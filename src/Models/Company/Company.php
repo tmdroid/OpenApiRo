@@ -4,7 +4,7 @@ namespace tmdroid\OpenApiRo\Models\Company;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
-use tmdroid\OpenApiRo\Facades\CompanyEndpoints;
+use tmdroid\OpenApiRo\Traits\CompanyEndpoints;
 
 /**
  * Class Company
